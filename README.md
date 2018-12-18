@@ -43,6 +43,7 @@ Creates the 4 folders that should be in every repository (with examples):
 ### General
 
 - Don't break the build.
+- Use the character `Ω` (ohm sign) before project names to make them sorted after everything else on all systems. (I tend to do this when I work with clients on my personal Azure DevOps instance, by using the template `Ω ClientName - ProjectTitle`)
 
 ### Unity
 
