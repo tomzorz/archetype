@@ -1,0 +1,2 @@
+# archetype
+My repository template
