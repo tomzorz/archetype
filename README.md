@@ -6,6 +6,8 @@ My repository template.
 
 ### Scripts
 
+The scripts in this repository are .sh files. They run on unix systems by default and also on Windows systems with the help of WSL.
+
 #### get_global_gitignore
 
 Shows the global git ignore file. Best to clear it out and rely only on the repository specific ignore files to avoid issues.
