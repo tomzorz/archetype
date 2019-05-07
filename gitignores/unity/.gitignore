@@ -15,7 +15,8 @@
 !/.tn/
 !/.tn/*/
 /.tn/*/*
-!/.tn/*/*.csproj
+!/.tn/*/integration.*.csproj
+!/.tn/*/integration.*.config.json
 
 # And maybe some readmes
 !/readme.md
