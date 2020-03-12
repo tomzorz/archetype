@@ -6,9 +6,13 @@
 !.gitignore
 !.gitattributes
 
-# The actually needed content
+# The actually needed content - part I.
 !/Assets/
 !/ProjectSettings/
+
+# Fix re-include file from already ignored folder - actually needed content part II.
+!/Packages/
+/Packages/*
 !/Packages/manifest.json
 
 # .csproj files of toitnups
