@@ -24,7 +24,7 @@ Shows the global git ignore file. Best to clear it out and rely only on the repo
 
 #### `create_folders.sh`
 
-Creates the 4 folders that should be in every repository (with examples):
+Creates the 5 folders that should be in every repository (with examples):
 
 - `media` to hold raw assets used by the project
   - .psd for the logo
