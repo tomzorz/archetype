@@ -60,10 +60,6 @@ Creates the 5 folders that should be in every repository (with examples):
 
 - Place the .gitattributes file in the repository root to enable git-lfs support for recommended files and enable some extra QoL features. Make sure to use/enable LFS checkout.
 
-### Agents guidelines
-
-Project specific coding agents guidelines file, 🙏 to Jess Fraz and various others for inspiration.
-
 ----------
 
 ## 📕 Assorted best practices
