@@ -1,2 +1,2 @@
 create_folders.sh text eol=lf
-get_global_gitinore.sh text eol=lf
+get_global_gitignore.sh text eol=lf
