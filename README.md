@@ -51,7 +51,8 @@ Creates the 5 folders that should be in every repository (with examples):
 - Place the project specific gitignore file in the project folders that were created inside the `sources` folder
     - **Visual Studio**: the used .gitignore is the one most commonly found only, tested and tried
     - **Unity**: because Unity tends to litter the project structure uncontrollably with assorted files this .gitignore flips things a bit... we ignore everything, and specifically whitelist the few folders and files we actually need (making sure we get everything from those folders).
-    - **Python**: a relatively standard one
+    - **Python**: the widely used standard one, with the tooling that showed up since (uv, ruff, pdm, hatch, pixi) folded in
+    - **JavaScript / TypeScript**: covers npm, pnpm, yarn and bun, plus the build output and caches the popular bundlers and meta-frameworks leave lying around. Lockfiles are deliberately not ignored: commit one, delete the others.
 
 > 👉 As an example, Unity and Visual Studio projects differ so greatly that it makes zero sense to try and handle all the ignoring with one .gitignore file. Just one example here would be the .meta files, which are crucial to all Unity projects, but almost every VS .gitignore file has a line for removing them.
 

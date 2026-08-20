@@ -1,0 +1,96 @@
+# JavaScript / TypeScript
+#   Covers npm, pnpm, yarn and bun, plus the build and cache directories of
+#   the usual bundlers and meta-frameworks. Trim what your project doesn't use.
+
+# Dependencies
+node_modules/
+jspm_packages/
+web_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Lockfiles
+#   Deliberately NOT ignored. Commit exactly one of package-lock.json,
+#   pnpm-lock.yaml, yarn.lock or bun.lock and delete the others.
+
+# Build output
+dist/
+build/
+out/
+.output/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+storybook-static/
+
+# Framework and bundler caches
+.next/
+.nuxt/
+.svelte-kit/
+.astro/
+.docusaurus/
+.angular/
+.vite/
+.turbo/
+.nitro/
+.cache/
+.parcel-cache/
+.rollup.cache/
+.webpack/
+.eslintcache
+.stylelintcache
+
+# Deploy platform artifacts
+.vercel/
+.netlify/
+.wrangler/
+.serverless/
+.firebase/
+
+# Testing and coverage
+coverage/
+*.lcov
+.nyc_output/
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
+cypress/screenshots/
+cypress/videos/
+
+# Environment files
+#   .env.example stays in the repo so a fresh clone knows what to fill in.
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime and package manager leftovers
+pids
+*.pid
+*.pid.lock
+*.seed
+*.tgz
+.npm
+.yarn-integrity
+.node_repl_history
+
+# Type definition downloads
+typings/
+
+# IntelliJ
+.idea/

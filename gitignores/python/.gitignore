@@ -91,6 +91,26 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+# poetry
+#   Same trade-off as Pipfile.lock: commit poetry.lock for applications,
+#   consider leaving it out for libraries.
+#poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# hatch
+.hatch/
+
+# uv
+#   Nothing to ignore here on purpose. The cache lives in the user profile
+#   and uv.lock belongs in version control, same as any other lockfile.
+
+# pixi
+.pixi/
+
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
@@ -124,6 +144,15 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+# Ruff
+.ruff_cache/
+
+# Pytype
+.pytype/
+
+# Cython debug symbols
+cython_debug/
 
 # Pyre type checker
 .pyre/
