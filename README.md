@@ -109,7 +109,9 @@ Shows the global git ignore file, so you can check it is empty before trusting a
 
 ### `.gitattributes`
 
-Goes in the repository root. Routes models, audio, fonts, images, documents, binaries and installers through git-lfs, and collapses Unity-generated files in GitHub diffs.
+Goes in the repository root. Routes models, audio, DAW projects, fonts, images, documents, binaries and installers through git-lfs, and collapses Unity-generated files in GitHub diffs.
+
+> 👉 DAW project files that are plain text or XML are left out on purpose, and the file says which ones and why. Putting Reaper's `.rpp` through LFS would trade a readable diff for nothing.
 
 ----------
 
