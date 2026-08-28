@@ -1,0 +1,31 @@
+# Go
+#   Go keeps its build and module caches in the user profile, so the project
+#   tree stays clean on its own. What's left is compiled output, test
+#   artifacts, and the local workspace file.
+
+# Compiled output
+#   `go build` drops the binary next to the source unless pointed elsewhere;
+#   bin/ covers the conventional -o target.
+bin/
+*.exe
+
+# Test and profiling artifacts
+#   *.test comes from `go test -c`, *.out from coverage and pprof.
+*.test
+*.out
+
+# Go workspace file
+#   go.work is a local multi-module convenience; committing it imposes your
+#   directory layout on everyone else.
+go.work
+go.work.sum
+
+# Dependencies
+#   go.sum is deliberately NOT ignored, it is the lockfile. vendor/ is also
+#   not ignored: if you vendor at all, the committed copy is the point.
+
+# Environment files
+.env
+
+# IntelliJ
+.idea/

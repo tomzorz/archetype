@@ -53,6 +53,7 @@ One per project folder inside `sources/`, matching that project's stack:
 - **Unity**: because Unity tends to litter the project structure uncontrollably with assorted files this .gitignore flips things a bit... we ignore everything, and specifically whitelist the few folders and files we actually need (making sure we get everything from those folders).
 - **Python**: the widely used standard one, with the tooling that showed up since (uv, ruff, pdm, hatch, pixi) folded in
 - **JavaScript / TypeScript**: covers npm, pnpm, yarn and bun, plus the build output and caches the popular bundlers and meta-frameworks leave lying around. Lockfiles are deliberately not ignored: commit one, delete the others.
+- **Go**: short by design, since Go keeps its build and module caches out of the project tree. Compiled and test output, plus the local `go.work` files; `go.sum` and `vendor/` are deliberately not ignored.
 
 Do not merge two stacks into one file.
 
@@ -105,7 +106,7 @@ Shows the global git ignore file, so you can check it is empty before trusting a
 
 ### `.gitignores`
 
-`repo-root` goes in the repository root. `visualstudio`, `unity`, `python` and `javascript` go in the matching project folder under `sources/`.
+`repo-root` goes in the repository root. `visualstudio`, `unity`, `python`, `javascript` and `go` go in the matching project folder under `sources/`.
 
 ### `.gitattributes`
 
