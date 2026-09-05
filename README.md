@@ -77,9 +77,8 @@ Each of these is a folder in the repository root, and each can be created on the
 | `docs` | There is a document that is not the README, or there is more than one of them. Specs, install guides and third party API dumps all land here. | The README covers it. |
 | `data` | Sample or fixture files are needed to run the project, and they are either shared between projects or too large or awkward to sit next to the tests. | The fixtures belong next to the tests that read them, which is the normal case for a code project. |
 | `submodules` | You run `git submodule add`. | You do not. There is nothing to anticipate here. |
-| `.agents` | Agents work in this repository, which in practice means most of them. Holds `napkin.md`, `sticky-notes/` and `assumptions/`, and gets committed: the point of the napkin is that the next session reads it. | Nobody but you touches the repo. |
 
-> 👉 The first four all exist to keep the repository root readable and raw assets out of the build tree. Unity in particular generates a `.meta` file for anything it can see, so a `.psd` parked inside the project is a `.psd` that grows barnacles. `media` was called `assets` once, and got renamed so it stops colliding with Unity's own `Assets`.
+> 👉 All four exist to keep the repository root readable and raw assets out of the build tree. Unity in particular generates a `.meta` file for anything it can see, so a `.psd` parked inside the project is a `.psd` that grows barnacles. `media` was called `assets` once, and got renamed so it stops colliding with Unity's own `Assets`.
 
 ----------
 
