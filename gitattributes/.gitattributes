@@ -116,3 +116,7 @@
 *.meta linguist-generated
 *.prefab linguist-generated
 *.unity linguist-generated
+
+# Files that run on Linux keep LF, even under core.autocrlf=true on Windows
+*.sh text eol=lf
+Dockerfile text eol=lf
