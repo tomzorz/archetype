@@ -31,6 +31,8 @@
 *.s3m filter=lfs diff=lfs merge=lfs -text
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.xm filter=lfs diff=lfs merge=lfs -text
+# Go's module file shares the tracker-module extension and is plain text
+go.mod !filter !diff !merge text
 
 # DAW projects
 # Deliberately absent, do not "fix" these: .rpp (Reaper) and .sesx (Audition)
