@@ -122,3 +122,4 @@ go.mod !filter !diff !merge text
 # Files that run on Linux keep LF, even under core.autocrlf=true on Windows
 *.sh text eol=lf
 Dockerfile text eol=lf
+*.nix text eol=lf
