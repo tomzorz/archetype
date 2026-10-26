@@ -1,0 +1,4 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tomzorz/portolan/main/docs/project.schema.json",
+  "description": "The skeleton every new repository starts from: a sources folder per project, the root ignore and git-lfs attributes files, and per-stack ignore templates that agents fetch instead of retyping."
+}
